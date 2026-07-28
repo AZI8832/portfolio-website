@@ -1,33 +1,11 @@
+
 <!DOCTYPE html>
 <html lang="ar">
 <head>
     <meta charset="UTF-8">
     <title>موقعي الشخصي</title>
-    <style>#projects {
-  margin-top: 40px;
-  text-align: left;
-}
 
-#projects h2 {
-  color: #38bdf8;
-  margin-bottom: 20px;
-}
-
-.project {
-  background: #1e293b;
-  padding: 20px;
-  border-radius: 10px;
-  margin-bottom: 15px;
-}
-
-.project h3 {
-  color: #38bdf8;
-  margin-bottom: 10px;
-}
-
-.project p {
-  color: #cbd5e1;
-}
+    <style>
         body {
             font-family: Arial;
             background: #0f172a;
@@ -35,15 +13,18 @@
             text-align: center;
             padding: 50px;
         }
+
         h1 {
             color: #38bdf8;
         }
+
         .card {
             background: #1e293b;
             padding: 30px;
             border-radius: 15px;
             margin-top: 20px;
         }
+
         button {
             padding: 10px 20px;
             border: none;
@@ -52,33 +33,65 @@
             border-radius: 8px;
             cursor: pointer;
         }
+
+        /* قسم المشاريع */
+        #projects {
+            margin-top: 40px;
+            text-align: left;
+        }
+
+        #projects h2 {
+            color: #38bdf8;
+            margin-bottom: 20px;
+        }
+
+        .project {
+            background: #1e293b;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .project h3 {
+            color: #38bdf8;
+            margin-bottom: 10px;
+        }
+
+        .project p {
+            color: #cbd5e1;
+        }
     </style>
 </head>
+
 <body>
 
-    <h1>👋 أهلاً، أنا أزي</h1>
+    <h1>👋 أهلاً أنا أزي</h1>
+
     <div class="card">
-        <h2>مطور ويب مبتدئ</h2>
-        <p>أتعلم حالياً HTML و CSS و JavaScript 🚀</p>
+        <h2>مطوّر ويب مبتدئ</h2>
+        <p>🚀 حالياً أتعلم HTML و CSS و JavaScript</p>
         <button onclick="alert('شكراً لزيارتك!')">اضغط هنا</button>
     </div>
-<section id="projects">
-  <h2>My Projects</h2>
 
-  <div class="project">
-    <h3>Sahlaha</h3>
-    <p>A simple web project built with HTML and CSS.</p>
-  </div>
+    <!-- قسم المشاريع -->
+    <section id="projects">
+        <h2>My Projects</h2>
 
-  <div class="project">
-    <h3>Masrify App</h3>
-    <p>A personal expense tracking application.</p>
-  </div>
+        <div class="project">
+            <h3>Sahlaha</h3>
+            <p>A simple web project built with HTML and CSS.</p>
+        </div>
 
-  <div class="project">
-    <h3>Portfolio Website</h3>
-    <p>My personal portfolio showcasing my work and skills.</p>
-  </div>
-</section>
+        <div class="project">
+            <h3>Masrify App</h3>
+            <p>A personal expense tracking application.</p>
+        </div>
+
+        <div class="project">
+            <h3>Portfolio Website</h3>
+            <p>My personal portfolio showcasing my work and skills.</p>
+        </div>
+    </section>
+
 </body>
 </html>
