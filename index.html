@@ -2,95 +2,88 @@
 <html lang="ar">
 <head>
     <meta charset="UTF-8">
-    <title>موقعي الشخصي</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AZI Portfolio</title>
 
     <style>
         body {
-            font-family: Arial;
+            margin: 0;
+            font-family: Arial, sans-serif;
             background: #0f172a;
             color: white;
             text-align: center;
-            padding: 50px;
         }
 
-        h1 {
+        header {
+            background: #1e293b;
+            padding: 30px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+        }
+
+        header h1 {
+            margin: 0;
             color: #38bdf8;
+            font-size: 2.5rem;
+        }
+
+        header p {
+            margin-top: 10px;
+            color: #cbd5e1;
+            font-size: 1.1rem;
+        }
+
+        .container {
+            padding: 50px 20px;
         }
 
         .card {
+            max-width: 700px;
+            margin: auto;
             background: #1e293b;
             padding: 30px;
             border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+        }
+
+        .card h2 {
+            color: #38bdf8;
+        }
+
+        .btn {
+            display: inline-block;
             margin-top: 20px;
-        }
-
-        button {
-            padding: 10px 20px;
-            border: none;
+            padding: 12px 24px;
             background: #38bdf8;
-            color: black;
+            color: white;
+            text-decoration: none;
             border-radius: 8px;
-            cursor: pointer;
+            transition: 0.3s;
         }
 
-        /* قسم المشاريع */
-        #projects {
-            margin-top: 40px;
-            text-align: left;
-        }
-
-        #projects h2 {
-            color: #38bdf8;
-            margin-bottom: 20px;
-        }
-
-        .project {
-            background: #1e293b;
-            padding: 20px;
-            border-radius: 10px;
-            margin-bottom: 15px;
-        }
-
-        .project h3 {
-            color: #38bdf8;
-            margin-bottom: 10px;
-        }
-
-        .project p {
-            color: #cbd5e1;
+        .btn:hover {
+            background: #0ea5e9;
         }
     </style>
 </head>
 
 <body>
 
-    <h1>👋 أهلاً أنا أزي</h1>
+    <header>
+        <h1>🌐 AZI Portfolio</h1>
+        <p>مطور مواقع وتطبيقات | صانع محتوى رقمي | مهتم بالذكاء الاصطناعي</p>
+    </header>
 
-    <div class="card">
-        <h2>مطوّر ويب مبتدئ</h2>
-        <p>🚀 حالياً أتعلم HTML و CSS و JavaScript</p>
-        <button onclick="alert('شكراً لزيارتك!')">اضغط هنا</button>
+    <div class="container">
+        <div class="card">
+            <h2>مرحبًا بك</h2>
+            <p>
+                هذا هو موقعي الشخصي، أشارك فيه مشاريعي، وأعمالي،
+                وكل ما يتعلق بتطوير المواقع والتطبيقات والذكاء الاصطناعي.
+            </p>
+
+            <a href="#" class="btn">تواصل معي</a>
+        </div>
     </div>
-
-    <!-- قسم المشاريع -->
-    <section id="projects">
-        <h2>My Projects</h2>
-
-        <div class="project">
-            <h3>Sahlaha</h3>
-            <p>A simple web project built with HTML and CSS.</p>
-        </div>
-
-        <div class="project">
-            <h3>Masrify App</h3>
-            <p>A personal expense tracking application.</p>
-        </div>
-
-        <div class="project">
-            <h3>Portfolio Website</h3>
-            <p>My personal portfolio showcasing my work and skills.</p>
-        </div>
-    </section>
 
 </body>
 </html>
